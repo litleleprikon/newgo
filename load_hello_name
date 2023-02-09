@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+N=100
+
+for COUNT in {1..100}
+do
+    curl localhost:8080/hello/name?name=User-$COUNT
+    echo Run request $COUNT
+done
